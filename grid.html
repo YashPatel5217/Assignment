@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+</head>
+<style>
+     
+        .mainy
+        {
+            display: grid;
+            grid-template-rows:50px 80px 50px 80px  ;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-gap: 10px;
+            
+        }
+
+                    
+    .header
+    {
+        background-color: aqua;
+        grid-column: 1/-1;
+        box-sizing: border-box;
+    }
+     .menu
+     {
+        background-color: cornflowerblue;
+        grid-row: 2/3;
+     }
+     .main
+     {
+        background-color: darkkhaki;
+        grid-row: 2/4;
+        grid-column:2/4 ;
+     }
+     .ad1
+    {
+        background-color: darkgoldenrod;
+        grid-row: 2/4;
+    }
+    .ad2
+    {
+        background-color: lightcoral;
+        grid-row: 3/4;
+    }
+    .footer
+    {
+       background-color: mediumspringgreen;
+       grid-column: 1/-1; 
+    }
+</style>
+<body> 
+<div class="mainy">
+    <div class="header">header</div>
+    <div class="menu">menu</div>
+    <div class="main">main</div>
+    <div class="ad1">ad1</div>
+    <div class="ad2">ad2</div>
+    <div class="footer">footer</div>
+</div>
+</body>
+</html>
