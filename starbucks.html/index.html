@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="shortcut icon" type="x-icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png">
+    <title>starbucks</title>
+</head>
+<style>
+    .top
+    {
+        background-color: darkolivegreen;
+        height: 10px;
+    }
+    .logo img
+    {
+        height: 70px;
+        width: 70px;
+        padding-left: 25px;
+        padding-top: 15px;
+    }
+    .header
+    {
+        display: flex;
+        background-color: whitesmoke;
+    }
+    .find
+    {
+        padding-left: 80%;
+        font-size: 18px;
+        padding-top: 10px;
+        color: green;
+    }
+    .main
+    {
+        display: flex;
+        padding-left: 20px;
+        padding-top: 20px;
+        background-color: whitesmoke;
+        height: 50px;
+    }
+    .menu
+    {
+        padding-right: 10px;
+        font-style: inherit;
+        opacity: 0.7;
+        color: darkgreen;
+        padding-top: 10px;
+    }  
+    #fee
+    {
+        width:180px;
+    }
+    .menu a
+    {
+        text-decoration: none;
+        color: darkgreen;
+    }
+    .menu:hover
+    {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+    .new .text
+    {
+        visibility: hidden;
+        width:80%;
+        padding-right: 10px ;
+         height: 20px;  
+        display: inline-block;
+        opacity: 0.6;
+    }
+    .menu:hover .new .text
+    {
+       visibility: visible;
+       background-color: black;
+       color: white;
+       opacity: 1;
+    }
+    .star img
+    {
+        width: 100%;
+        height: 600px;
+        padding-top: 10px;
+    }
+    .monsoon img
+    {
+        width: 100%;
+    }
+    .tro img
+    {
+        width: 100%;
+        
+    }
+    .scoop img
+    {
+      width: 100%;
+    }
+    .app img
+    {
+        width: 100%;
+        height: 650px;
+    }
+    .two
+    {
+        display: flex;
+    }
+    .get
+    {
+      padding-top: 100px;
+    }
+    .get h2
+    {
+      font-size: 50px;
+      padding-left: 50px;
+      opacity: 0.6;
+    }
+    .glass
+    {
+        display: flex;
+    }
+    .liti
+    {
+        background-color: palevioletred;
+        width: 200px;
+      height: 15px;
+      margin-left:150px;
+      border-radius: 10px;
+    }
+    .butten
+    {
+        width: 300px;
+        text-align: center;
+        font-size: 50px;
+        border-radius: 20px;
+        margin-left: 90px;
+        background-color:rgb(1, 100, 1);
+        float: left;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .butten a
+    {
+        text-decoration: none;
+        color: wheat;
+    }
+    .text
+    {
+        color: black;
+        padding-left: 90px;
+         float: right;
+        padding-top: 10px;
+        font-size: 19px;
+    }
+    .cofee
+    {
+        padding-top: 30px;
+        transition: 0.8s;
+    }
+    .cofee img
+    {
+        width: 630px;
+    }
+    .cofee:hover
+    {
+        transform: scale(1.1);
+    }
+    .cn
+    {
+        display: flex;
+    }
+    .let
+    {
+        padding-top: 200px;
+        padding-left: 30px;
+    }
+    .op
+    {
+        display: flex;
+    }
+    .op img
+    {
+        transition: 1.2s;
+        width: 600px;
+        padding-bottom: 20px;
+    }
+    .op img:hover
+    {
+        transform: scale(1.1);
+       
+    }
+    .tobe
+    {
+        padding-top: 200px;
+        padding-left: 50px;
+    }
+    .cook img
+    {
+        padding-left: 20px;
+    }
+    .insta
+    {
+        background-color: darkgrey;
+        height: 50px;
+        font-size: 40px;
+        padding-left: 40px;
+    }
+    .insta i
+    {
+        opacity: 0.6;
+    }
+    .insta i:hover
+    {
+        opacity: 1;
+        cursor: pointer;
+    }
+    .footer
+    {
+        display: flex;
+        padding-left: 50px;
+        background-color: whitesmoke;
+        margin-top: 5px;
+        height: 200px;
+    }
+    .about
+    {
+        padding-left: 50px;
+        opacity: 0.6;
+    }
+    .about a
+    {
+        text-decoration: none;
+        color: black;
+    }
+    .about:hover
+    {
+        opacity: 1;
+        cursor: pointer;
+    }
+    .last
+    {
+        background-color: whitesmoke;
+        height: 100px;
+        padding-left: 100px;
+        padding-top: 20px;
+    }
+    .starb
+    {
+        opacity: 0.6;
+        font-size: 25px;
+        padding-left: 10px;
+    }
+    .mys
+    {
+        font-size: 18px;
+        padding-top: 30px;
+    }
+    
+    @media (min-width:350px) and (max-width:450px)
+
+    {
+        .top
+    {
+        background-color: darkolivegreen;
+        height: 10px;
+        width: 100%;
+    }
+    .logo img
+    {
+        height: 70px;
+        width: 40px;
+        padding-left: 25px;
+        padding-top: 15px;
+    }
+    .header 
+    {
+        display: flex;
+        background-color: whitesmoke;
+    }
+    .find
+    {
+        padding-left: 67%;
+        font-size: 18px;
+        padding-top: 10px;
+        color: green;
+    }
+    .main
+    {
+        display: inline-block;
+        padding-left: 50px;
+        padding-top: 20px;
+        background-color: whitesmoke;
+        height: 260px;
+        width: 87%;
+    }
+    .menu
+    {
+        padding-left: 20px;
+        padding-right: 25px;
+        font-style: inherit;
+        opacity: 0.7;
+        color: darkgreen;
+        padding-top: 10px;
+    }  
+    .menu:hover
+    {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }   
+    .new .text
+    {
+        visibility: hidden;
+        width: 80%;
+         height: 20px;  
+        padding-left: 0px;
+        display: inline-block;
+        opacity: 0.6;
+    }
+    .menu:hover .new .text
+    {
+       visibility: visible;
+       background-color: black;
+       color: white;
+       opacity: 1;
+    }
+    .star img
+    {
+        width: 100%;
+        height: 400px;
+        z-index: 1;
+    }
+    .monsoon img
+    {
+        width: 100%;
+    }
+    .tro img
+    {
+        width: 100%;
+        
+    }
+    .scoop img
+    {
+      width: 100%;
+    }
+    .app img
+    {
+        width: 100%;
+        height: 500px;
+    }
+    .two
+    {
+        display: block;
+    }
+    .glass img
+    {
+        width: 100%;
+    }
+    .glass
+    {
+        display: block;
+    }
+    .get
+    {
+      padding-top: 10px;
+    }
+    .get h2
+    {
+      font-size: 30px;
+      padding-left: 0px;
+      opacity: 0.6;
+    }
+    .get h1
+    {
+        font-size: 30px;
+        padding-left: 0px;
+        opacity: 0.6;
+    }
+    .liti
+    {
+        background-color: palevioletred;
+        width: 200px;
+      height: 15px;
+      margin-left: 50px;
+      border-radius: 10px;
+    }
+    .butten
+    {
+        width: 270px;
+        height: 70px;
+        text-align: center;
+        font-size: 50px;
+        border-radius: 20px;
+        color: white;
+        margin-left: 10px;
+        margin-top: 20px;
+        background-color:rgba(1, 71, 1, 0.822);
+    }
+    .text
+    {
+        color: black;
+        padding-top: 50px;
+        font-size: 10px;
+    }
+    .cofee img
+    {
+        padding-top: 30px;
+        width: 100%;
+        transition: 0.8s;
+    }
+    .cofee:hover
+    {
+        transform: scale(1.1);
+    }
+    .cn
+    {
+        display: grid;
+    }
+    .let
+    {
+        padding-top: 20px;
+        padding-left: 25px;
+    }
+    .op
+    {
+        display: grid;
+    }
+    .op img
+    {
+        transition: 1.2s;
+        width: 100%;
+    }
+    .op img:hover
+    {
+        transform: scale(1.1);
+    }
+    .tobe
+    {
+        padding-top: 100px;
+        padding-left: 50px;
+    }
+    .cook img
+    {
+        padding-left: 10px;
+    }
+    .insta
+    {
+        background-color: darkgrey;
+        height: 50px;
+        font-size: 40px;
+        padding-left: 40px;
+    }
+    .insta i
+    {
+        opacity: 0.6;
+    }
+    .insta i:hover
+    {
+        opacity: 1;
+        cursor: pointer;
+    }
+    .footer
+    {
+        display: grid;
+        padding-left: 20px;
+        background-color: whitesmoke;
+        margin-top: 5px;
+        height: 200px;
+        width:95%;
+    }
+    .about
+    {
+        padding-left: 50px;
+        opacity: 0.6;
+    }
+    .about:hover
+    {
+        opacity: 1;
+        cursor: pointer;
+    }
+    .last
+    {
+        background-color: whitesmoke;
+        height: 200px;
+        padding-left: 50px;
+        padding-top: 200px;
+    }
+    .starb
+    {
+        opacity: 0.6;
+        font-size: 25px;
+        padding-left: 10px;
+    }
+    .mys
+    {
+        font-size: 18px;
+        padding-top: 30px;
+    }   
+    }
+</style>
+<body>
+    <div class="top"></div>
+    <div class="header">
+        <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png" alt=""></div>
+        <div class="find"> <a href="https://rewards.starbucks.in/store-locator"><i class="fa-solid fa-location-dot"></i> find a store</a></div>
+    </div>
+    <div class="main">
+        <div class="menu" id="fee"><a href="starbucks2.html">COFFEE <div class="new">
+            <div class="text"><b>our coffee</b></div>
+            <div class="text"><span>starbucks VIA</span></div>
+            <div class="text"><span>whole bean coffee</span></div>
+            <div class="text"><span>view all coffees</span></div>
+            <div class="text"><span> <b> ethical sourcing</b></span></div>
+            <div class="text"><span>coffee</span></div>
+            <div class="text"><span>coffee quality</span></div>
+        </div></a>
+            <div class="new">
+                <div class="text"><b>our coffee</b></div>
+                <div class="text"><span>starbucks VIA</span></div>
+                <div class="text"><span>whole bean coffee</span></div>
+                <div class="text"><span>view all coffees</span></div>
+                <div class="text"><span> <b> ethical sourcing</b></span></div>
+                <div class="text"><span>coffee</span></div>
+                <div class="text"><span>coffee quality</span></div>
+        </div>
+     </div>
+        <div class="menu"><a href="starbucks2.html">MENU</a></div>
+        <div class="menu"><a href="starbucks2.html">COFFEEHOUSE</a></div>
+        <div class="menu"><a href="starbucks2.html">RESOPNSIBLITY</a></div>
+        <div class="menu"><a href="starbucks2.html">REWARDS</a></div>
+        <div class="menu"><a href="starbucks2.html">CAREER</a></div>
+        <div class="menu"><a href="starbucks2.html">SEASON'S GIFTING</a></div>
+        <div class="menu"><a href="starbucks2.html">STARBUCKS DILIIVERS</a></div>
+        <div class="menu"><a href="starbucks2.html"> ABOUT US</a></div>
+    </div>
+        <div class="star"><img src="star.PNG" alt=""></div>
+    <div class="monsoon"><img src="yash.PNG" alt=""></div>
+    <div class="tro"><img src="fav.PNG" alt=""></div>
+    <div class="scoop"><img src="java img.PNG" alt=""></div>
+         <div class="app"><a href="https://www.starbucks.in/card/learn-more/card-faq.html#question_about_mobile_order_and_pay"><img src="mobile.PNG" alt=""></a></div>
+       
+         <div class="glass"><img src="Cap.PNG" alt="">
+                <div class="get"><h2> get your favourites</h2>
+               <div class="starb"><h1>#starbucksonflipkart</h1> 
+                <div class="liti"></div>
+                <div class="butten"><a href="https://www.flipkart.com/kitchen-cookware-serveware/pr?count=40&p%5B%5D=facets.fulfilled_by%255B%255D%3DFlipkart%2BAssured&sid=upp&p%5B%5D=facets.brand%255B%255D%3DStarbucks&pageUID=1632744337591&sort=recency_desc"> shop now</a></div>
+                <br><br>
+                <div class="mys"><b> my starbucks rewards TM members will not be awarded stars for purchases made on e-commerce or dilivery platforms</b></div> 
+                </div>              
+                </div>        
+        </div>
+
+        <div class="cn">
+        <div class="cofee"><img src="coffee.PNG" alt=""></div>
+        <div class="let"><h1>LET US DELIGHT YOU.</h1><p>delicious, handcrafted beverages and great-tasting food. <br> The secret to making life better.</p></div>
+        </div>
+        <div class="op">
+            <div class="tobe"><h1><b> OPPORTUNITY</b></h1><p>to be more than an employee, to be a partnerr.</p></div>
+             <div class="cook"><img src="cook.PNG" alt=""></div>
+        </div>
+        <div class="insta">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+        </div>
+        <div class="footer">
+            <div class="about"><a href="aboutus.html"><h1>about us</h1></a><span> our heritage<br>our company</span></div>
+            <div class="about"><a href="aboutus.html"><h1>customer service</h1></a><br><span>frequently asked questions</span></div>
+            <div class="about"><a href="aboutus.html"><h1>quick links</h1></a><br><span>store locator</span></div>
+        </div>
+        <div class="last"><p>web accessiblity / privacy statement / terms of use / site map / contact us</p></div>      
+        </body>
+</html>
